@@ -1,11 +1,13 @@
 import React from "react";
-import Title from "./components/Title";
-import "./styles.css";
+import Navbar from "./components/Navbar";
+import "./styles/main.scss";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Title />
+    <div className="container">
+      <Navbar />
     </div>
   );
-}
+};
+
+export default App;

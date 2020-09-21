@@ -1,3 +1,3 @@
 # Photogram
 
-An Instagram clone made with react and firebase.
+Instagram clone made with react and firebase

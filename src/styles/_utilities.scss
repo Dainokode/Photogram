@@ -1,0 +1,15 @@
+// Utility classes
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+// flex mixin
+@mixin flex($justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-content: center;
+  flex-direction: $direction;
+}

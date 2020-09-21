@@ -1,0 +1,26 @@
+// imports
+@import "./utilities";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  background: #f4f4f4;
+  color: #444;
+}
+
+// navbar
+#navbar {
+  @include flex(space-between, row);
+
+  .logo {
+    padding: 1rem;
+    font-weight: normal;
+    opacity: 0.8;
+  }
+}
