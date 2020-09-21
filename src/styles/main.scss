@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f4f4f4;
   color: #444;
 }
@@ -19,8 +19,25 @@ body {
   @include flex(space-between, row);
 
   .logo {
+    font-family: 'Noto Serif', serif;
     padding: 1rem;
     font-weight: normal;
+    opacity: 0.8;
+  }
+}
+
+// showcase 
+.showcase {
+  text-align: center;
+  margin-top: 6rem;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-family: 'Noto Serif', serif;
     opacity: 0.8;
   }
 }
