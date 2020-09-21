@@ -1,2 +1,3 @@
 # Photogram
-Created with CodeSandbox
+
+An Instagram clone made with react and firebase.
