@@ -7,8 +7,9 @@ const useStorage = (file) => {
   const [url, setUrl] = useState(null);
 
   useEffect(() => {
-    // reference
+    // references
     const storageRef = projectStorage.ref(file.name);
+
     storageRef.put(file).on(
       "state_changed",
       (snap) => {
@@ -25,7 +26,7 @@ const useStorage = (file) => {
     );
   }, [file]);
 
-  return { progress, error, url };
+  return { progress, url, error };
 };
 
 export default useStorage;
