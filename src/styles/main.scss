@@ -23,6 +23,7 @@ body {
     padding: 1rem;
     font-weight: normal;
     opacity: 0.8;
+    color: #a13678
   }
 }
 
@@ -54,4 +55,30 @@ body {
 .progress-bar {
   height: 5px;
   background: #800080;
+}
+
+// images container
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 3rem auto;
+}
+
+// images wrap
+.img-wrap {
+  overflow: hidden;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.9;
+  height: 0;
+}
+
+.img-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

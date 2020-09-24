@@ -13,6 +13,7 @@ const useStorage = (file) => {
   useEffect(() => {
     // references
     const storageRef = projectStorage.ref(file.name);
+    const collectionRef = projectFirestore.collection("images");
 
     storageRef.put(file).on(
       "state_changed",
@@ -25,9 +26,8 @@ const useStorage = (file) => {
       },
       async () => {
         const url = await storageRef.getDownloadURL();
-        const collectionRef = projectFirestore.collection("images");
-        const createdAt = timeStamp;
-        collectionRef.add({ url, createdAt });
+        const createdAt = timeStamp();
+        await collectionRef.add({ url, createdAt });
         setUrl(url);
       }
     );
